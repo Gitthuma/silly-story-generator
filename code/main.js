@@ -29,6 +29,12 @@ function result() {
 
 let newStory = storyText;
 
+/*Create three new variables called xItem, yItem, and zItem, and make them equal to the result of calling randomValueFromArray() on your three arrays*/
+
+let xItem = randomValueFromArray(insertX);
+let yItem = randomValueFromArray(insertY);
+let zItem = randomValueFromArray(insertZ);
+
   if(customName.value !== '') {
     let name = customName.value;
 
