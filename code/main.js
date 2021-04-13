@@ -25,6 +25,10 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+/*Create a new variable called newStory, and set its value to equal storyText.*/
+
+let newStory = storyText;
+
   if(customName.value !== '') {
     let name = customName.value;
 
