@@ -54,6 +54,11 @@ newStory = newStory.replace (":insertz:", zItem);
 
     /*Replace 94 with a calculation that converts 94 Fahrenheit into centigrade then concatenate ' centigrade' onto the end of the result of the overall Math.round() call.*/
     let temperature =  Math.round((94 - 32) * 5/9) + " centigrade";
+
+    /*Add two more string replacement lines that replace '94 fahrenheit' with the contents of the temperature variable, and '300 pounds' with the contents of the weight variable.*/
+
+    newStory = newStory.replace("94 fahrenheit", weight);
+    newStory = newStory.replace("300 pounds", temperature);
   }
 
   story.textContent = ;
