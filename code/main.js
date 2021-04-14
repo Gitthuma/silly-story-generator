@@ -52,7 +52,8 @@ newStory = newStory.replace (":insertz:", zItem);
   }
 
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(300);
+    /*Replace 300 with a calculation that converts 300 pounds into stones and concatenate ' stone' onto the end of the result of the overall Math.round() call.*/
+    let weight = Math.round(300/14) + " stone";
     let temperature =  Math.round(94);
 
   }
