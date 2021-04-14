@@ -35,7 +35,7 @@ let xItem = randomValueFromArray(insertX);
 let yItem = randomValueFromArray(insertY);
 let zItem = randomValueFromArray(insertZ);
 
-/* Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem.*/
+/*Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem.*/
 
 newStory = newStory.replace(":insertx:", xItem);
 newStory = newStory.replace(":insertx:", xItem);
@@ -43,9 +43,12 @@ newStory = newStory.replace(":inserty:", yItem);
 newStory = newStory.replace (":insertz:", zItem);
 
 
+
+
   if(customName.value !== '') {
     let name = customName.value;
-
+    /*Add another string replacement method call to replace the name 'Bob' found in the newStory string with the name variable.*/
+    newStory = newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
