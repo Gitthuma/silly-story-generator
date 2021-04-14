@@ -11,7 +11,7 @@ function randomValueFromArray(array){
 
 /*Create variables for text strings to be used as inputs for the program*/
 
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+let storyText = "It was 94 fahrenheit outside, so  went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 
 let insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 
@@ -34,6 +34,14 @@ let newStory = storyText;
 let xItem = randomValueFromArray(insertX);
 let yItem = randomValueFromArray(insertY);
 let zItem = randomValueFromArray(insertZ);
+
+/* Replace the three placeholders in the newStory string — :insertx:, :inserty:, and :insertz: — with the strings stored in xItem, yItem, and zItem.*/
+
+newStory = newStory.replace(":insertx:", xItem);
+newStory = newStory.replace(":insertx:", xItem);
+newStory = newStory.replace(":inserty:", yItem);
+newStory = newStory.replace (":insertz:", zItem);
+
 
   if(customName.value !== '') {
     let name = customName.value;
