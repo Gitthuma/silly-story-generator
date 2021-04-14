@@ -42,9 +42,6 @@ newStory = newStory.replace(":insertx:", xItem);
 newStory = newStory.replace(":inserty:", yItem);
 newStory = newStory.replace (":insertz:", zItem);
 
-
-
-
   if(customName.value !== '') {
     let name = customName.value;
     /*Add another string replacement method call to replace the name 'Bob' found in the newStory string with the name variable.*/
@@ -54,8 +51,9 @@ newStory = newStory.replace (":insertz:", zItem);
   if(document.getElementById("uk").checked) {
     /*Replace 300 with a calculation that converts 300 pounds into stones and concatenate ' stone' onto the end of the result of the overall Math.round() call.*/
     let weight = Math.round(300/14) + " stone";
-    let temperature =  Math.round(94);
 
+    /*Replace 94 with a calculation that converts 94 Fahrenheit into centigrade then concatenate ' centigrade' onto the end of the result of the overall Math.round() call.*/
+    let temperature =  Math.round((94 - 32) * 5/9) + " centigrade";
   }
 
   story.textContent = ;
