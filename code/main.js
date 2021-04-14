@@ -57,8 +57,8 @@ newStory = newStory.replace (":insertz:", zItem);
 
     /*Add two more string replacement lines that replace '94 fahrenheit' with the contents of the temperature variable, and '300 pounds' with the contents of the weight variable.*/
 
-    newStory = newStory.replace("94 fahrenheit", weight);
-    newStory = newStory.replace("300 pounds", temperature);
+    newStory = newStory.replace("94 fahrenheit", temperature);
+    newStory = newStory.replace("300 pounds", weight);
   }
 
   /*Make the textContent property of the story variable (which references the paragraph) equal to newStory.*/
