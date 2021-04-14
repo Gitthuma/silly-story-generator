@@ -14,3 +14,5 @@ You have been provided with some raw HTML/CSS and a few text strings and JavaScr
 The following screenshot shows an example of what the finished program should output:
 
 Ref: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
+
+Live web: https://gitthuma.github.io/silly-story-generator/
